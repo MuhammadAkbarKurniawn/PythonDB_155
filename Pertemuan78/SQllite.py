@@ -4,7 +4,7 @@ import sqlite3
 def hasil_prediksi():
     # Mendapatkan nilai dari input
     nama = entry_nama.get()
-    # Mendapatkan nilai dari 10 mata pelajaran (3 yang sudah ada + 10 tambahan)
+    # Mendapatkan nilai dari 10 mata pelajaran 
     nilai_biologi = float(entry_biologi.get())
     nilai_fisika = float(entry_fisika.get())
     nilai_inggris = float(entry_inggris.get())
@@ -17,7 +17,7 @@ def hasil_prediksi():
     nilai_tik = float(entry_tik.get())
 
     # Menentukan hasil prediksi berdasarkan nilai tertinggi
-    # Membandingkan nilai dari 13 mata pelajaran
+    # Membandingkan nilai dari 10 mata pelajaran
     nilai_tinggi = max(nilai_biologi, nilai_fisika, nilai_inggris, nilai_mtk, nilai_kimia,
                        nilai_sejarah, nilai_geografi, nilai_seni, nilai_olahraga,
                        nilai_tik)
